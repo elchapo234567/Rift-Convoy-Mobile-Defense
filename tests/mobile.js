@@ -39,7 +39,8 @@ const assert = require("assert");
   const tutorialDone = await page.evaluate(() => __RIFT_TEST__.progress.tutorialComplete);
   assert.strictEqual(tutorialDone, true, "Touch must complete onboarding");
   await tapGame(280, 661); // Cryo module
-  await tapGame(437, 303); // Empty hardpoint
+  const hardpoint = await page.evaluate(() => ({ x: __RIFT_TEST__.run.hardpoints[1].x, y: __RIFT_TEST__.run.hardpoints[1].y }));
+  await tapGame(hardpoint.x, hardpoint.y); // Empty moving hardpoint
   const installed = await page.evaluate(() => __RIFT_TEST__.run.hardpoints[1].type);
   assert.strictEqual(installed, "frost", "Touch must install a convoy module");
   await tapGame(1045, 661); // Repair Drone

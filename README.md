@@ -1,6 +1,6 @@
 # Rift Convoy: Mobile Defense
 
-Rift Convoy is a mobile-convoy defense game built as a dependency-free HTML5 canvas application. Instead of defending a stationary path, the player protects four moving vehicles, installs weapon modules directly on convoy hardpoints, commands air support, and chooses a new risk/reward route after every cleared sector.
+Rift Convoy is a mobile-convoy defense game built as a dependency-free HTML5 canvas application. Instead of defending a stationary path, the player protects four moving vehicles, installs weapon modules directly on convoy hardpoints, commands air support, and chooses a new risk/reward route after every cleared sector. A continuous generated road crosses four terrain biomes, and each vehicle plus its mounted weapon stays aligned to the moving road geometry.
 
 ## Play locally
 
@@ -32,6 +32,7 @@ node tests/smoke.js
 node tests/platform.js
 node tests/expeditions.js
 node tests/balance.js
+node tests/geometry.js
 node tests/ui-audit.js
 ```
 

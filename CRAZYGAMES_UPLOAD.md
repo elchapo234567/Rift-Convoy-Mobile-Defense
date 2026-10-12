@@ -8,6 +8,7 @@ The build contains:
 
 - eight escalating convoy expeditions with three to six sectors;
 - four moving convoy vehicles and four installable hardpoints;
+- a continuous procedural road across four crossfading terrain biomes, with vehicles aligned to every curve;
 - six modules with four visible upgrade levels;
 - Heli Strafe, Airstrike, and Repair Drone active abilities;
 - six risk/reward route decisions, with a safe option always available;
@@ -32,6 +33,7 @@ The build contains:
 - Start with a clean browser profile: 0 Shards, only the four starter modules, and only First Escort unlocked.
 - Complete or skip the five-step tutorial.
 - Install, upgrade, and sell convoy modules while the convoy is moving.
+- Confirm every vehicle follows the road angle and that a destroyed vehicle removes its mounted module at the same time.
 - Aim Heli Strafe and Airstrike; activate Repair Drone.
 - Clear a sector and choose each route category at least once.
 - Win First Escort and verify the next expedition unlocks and Shards persist after reload.

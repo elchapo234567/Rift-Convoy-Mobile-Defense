@@ -49,7 +49,7 @@ const assert = require("assert");
   await page.waitForFunction(() => !document.querySelector("#loading"), null, { timeout: 15000 });
 
   const assets = await page.evaluate(() => window.__RIFT_TEST__.assets);
-  assert.strictEqual(assets.declared, 35, "Expected 35 declared gameplay artworks");
+  assert.strictEqual(assets.declared, 21, "Expected 21 declared gameplay artworks");
   assert.strictEqual(assets.loaded, assets.declared, `Missing artwork: ${assets.missing.join(", ")}`);
 
   await page.screenshot({ path: "/tmp/rift-menu.png" });

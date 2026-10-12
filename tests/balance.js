@@ -21,8 +21,9 @@ const assert = require("assert");
   async function runMission(expedition, loadout) {
     await page.evaluate(({ expedition, loadout }) => window.__RIFT_TEST__.start(expedition, loadout), { expedition, loadout });
     // Buy a repair system immediately, then the cheapest available weapon.
-    await clickCanvas(636, 661); await clickCanvas(681, 305);
-    await clickCanvas(280, 661); await clickCanvas(437, 303);
+    const initialHardpoints = await page.evaluate(() => window.__RIFT_TEST__.run.hardpoints.map(h => ({ x: h.x, y: h.y })));
+    await clickCanvas(636, 661); await clickCanvas(initialHardpoints[3].x, initialHardpoints[3].y);
+    await clickCanvas(280, 661); await clickCanvas(initialHardpoints[1].x, initialHardpoints[1].y);
     let simulated = 0, abilityClock = 0;
     while (simulated < 720) {
       let info = await page.evaluate(() => {
