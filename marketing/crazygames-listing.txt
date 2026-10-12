@@ -1,0 +1,24 @@
+RIFT CONVOY: MOBILE DEFENSE — CRAZYGAMES LISTING
+=================================================
+
+DESCRIPTION
+
+Command a weaponized convoy through a world torn apart by dimensional rifts. Your base never stops moving: protect four individual vehicles, install and upgrade combat modules on the road, and directly call in helicopter strafes, airstrikes, and repair drones. Every cleared sector forces a new route decision—take a fortified pass to recover, enter a wreckage field for valuable Scrap, or risk a dangerous rift shortcut for bonus Shards. Master six four-level weapon systems, counter seven enemy classes, survive mechanical boss abilities, unlock new convoy technology, and escort the Last Convoy through eight escalating expeditions.
+
+CONTROLS
+
+Mouse / touch: Navigate menus, select modules, install or upgrade convoy hardpoints, choose routes, and aim active abilities.
+1–4: Select a module from the current convoy loadout.
+H: Target Heli Strafe.
+A: Target Airstrike.
+R: Activate Repair Drone.
+Space: Cycle through 1×, 2×, and 3× speed.
+P: Pause or resume the expedition.
+Right-click: Cancel the current module or ability selection.
+
+COVER FILES
+
+Landscape 16:9: marketing/covers/rift-convoy-landscape-1920x1080.png
+Portrait 2:3: marketing/covers/rift-convoy-portrait-800x1200.png
+Square 1:1: marketing/covers/rift-convoy-square-800x800.png
+
