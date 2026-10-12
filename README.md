@@ -1,6 +1,6 @@
 # Rift Convoy: Mobile Defense
 
-Rift Convoy is a mobile-convoy defense game built as a dependency-free HTML5 canvas application. Instead of defending a stationary path, the player protects four moving vehicles, installs weapon modules directly on convoy hardpoints, commands air support, and chooses a new risk/reward route after every cleared sector. A continuous generated road crosses four terrain biomes. Generated orthographic chassis follow the road geometry while separately layered top-down weapons rotate toward targets and visibly change at every upgrade level.
+Rift Convoy is a mobile-convoy defense game built as a dependency-free HTML5 canvas application. Instead of defending a stationary path, the player protects four moving vehicles, installs weapon modules directly on convoy hardpoints, commands air support, and chooses a new risk/reward route after every cleared sector. A continuous generated road crosses four terrain biomes while random multi-direction ambushes can attack from every battlefield edge. Generated orthographic chassis follow the road geometry while separately layered top-down weapons rotate toward targets and visibly change at every upgrade level. The Convoy Garage contains four complete skin sets, with optional rewarded-ad unlocks for the three generated variants.
 
 ## Play locally
 
@@ -32,12 +32,14 @@ node tests/smoke.js
 node tests/platform.js
 node tests/expeditions.js
 node tests/balance.js
+node tests/mobile.js
 node tests/geometry.js
 node tests/artwork.js
+node tests/features.js
 node tests/ui-audit.js
 ```
 
-The suites cover asset loading, all module weapons, every expedition and boss type, normal-player balance paths, rewarded-ad success/error/duplicate callbacks, cloud restore, revive flow, desktop/mobile layouts, portrait guidance, and all major interface screens.
+The suites cover asset loading, six unique weapon sounds, all module weapons, every expedition and boss type, normal-player balance paths, four-direction ambushes, skin selection and rewarded-ad unlocks, rewarded-ad success/error/duplicate callbacks, cloud restore, revive flow, desktop/mobile layouts, portrait guidance, and all major interface screens.
 
 ## CrazyGames build
 

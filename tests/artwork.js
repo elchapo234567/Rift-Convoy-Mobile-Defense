@@ -19,6 +19,9 @@ const fs = require("fs");
 
   const paths = {
     vehicles: "assets/convoy/vehicles-top.webp",
+    frostbiteSkin: "assets/skins/frostbite.webp",
+    emberstrikeSkin: "assets/skins/emberstrike.webp",
+    riftPhantomSkin: "assets/skins/rift-phantom.webp",
     gun: "assets/modules/gun-upgrades.webp",
     frost: "assets/modules/frost-upgrades.webp",
     rocket: "assets/modules/rocket-upgrades.webp",
@@ -57,9 +60,8 @@ const fs = require("fs");
     assert.strictEqual(new Set(cells.map(cell => cell.hash)).size, 4, `${name} must have four distinct designs`);
   }
   const source = fs.readFileSync("index.html", "utf8");
-  const enemyRenderer = source.match(/function drawEnemySprite\(e\)\{[^\n]+/)[0];
-  assert(!enemyRenderer.includes("ctx.rotate(e.angle"), "Enemy artwork must remain upright");
+  assert(source.includes("ctx.rotate(clamp(Math.sin(heading)*.11,-.11,.11))"), "Enemy artwork rotation must stay within an upright-safe range");
 
-  console.log(JSON.stringify({ generatedSheets: Object.keys(metrics).length, distinctCells: 28, enemiesUpright: true, result: "PASS" }, null, 2));
+  console.log(JSON.stringify({ generatedSheets: Object.keys(metrics).length, distinctCells: Object.keys(metrics).length * 4, enemiesUpright: true, result: "PASS" }, null, 2));
   await browser.close();
 })().catch(error => { console.error(error); process.exit(1); });

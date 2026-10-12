@@ -58,7 +58,7 @@ const sdkInit = seed => ({ seed: seed || null });
   const second = await makePage(firstResult.cloud);
   const restored = await second.evaluate(() => window.__RIFT_TEST__.progress);
   assert.strictEqual(restored.shards, 14, "A second device must restore the cloud save");
-  assert.strictEqual(restored.version, 1);
+  assert.strictEqual(restored.version, 2);
   await second.evaluate(() => {
     window.__RIFT_TEST__.setState("REWARDS");
     window.__adMode = "adCooldown";

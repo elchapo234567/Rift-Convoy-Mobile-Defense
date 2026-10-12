@@ -31,6 +31,7 @@ const { chromium } = require("playwright");
   await snap("03-expeditions-2");
   await snap("04-loadout", () => { __RIFT_TEST__.setExpedition(7); __RIFT_TEST__.setState("LOADOUT"); });
   await snap("05-armory", () => { __RIFT_TEST__.setState("ARMORY"); });
+  await snap("05b-garage", () => { __RIFT_TEST__.setState("SKINS"); });
   await snap("06-rewards", () => { __RIFT_TEST__.setState("REWARDS"); });
   await snap("07-game", () => { __RIFT_TEST__.start(7, ["rocket", "laser", "tesla", "repair"]); __RIFT_TEST__.boost(); for (const kind of ["normal", "fast", "armored", "phantom", "brute", "swarm"]) __RIFT_TEST__.spawn(kind); __RIFT_TEST__.boss(); __RIFT_TEST__.step(.2); });
   await snap("08-route", () => { __RIFT_TEST__.run.enemies = []; __RIFT_TEST__.checkpoint(); });

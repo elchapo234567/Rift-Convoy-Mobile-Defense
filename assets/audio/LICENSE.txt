@@ -1,17 +1,25 @@
-Mega Tower Defense audio sources
-=================================
+Rift Convoy audio sources
+==========================
 
 The sound effects in this folder come from official Kenney starter-kit
 repositories. Kenney states that the included sound effects are released
 under Creative Commons Zero 1.0 (CC0), so they may be used, modified and
 distributed without attribution.
 
-Sources retrieved on 2026-10-09:
+Sources verified and retrieved on 2026-10-12:
 
 - Kenney Starter Kit FPS
   https://github.com/KenneyNL/Starter-Kit-FPS
-  Used: blaster.ogg, blaster_repeater.ogg, enemy_attack.ogg,
-  enemy_destroy.ogg, land.ogg, weapon_change.ogg
+  Weapon mappings (processed locally into unique OGG files):
+  - blaster_repeater.ogg -> weapon-gun.ogg
+  - jump_c.ogg -> weapon-frost.ogg
+  - jump_a.ogg + enemy_destroy.ogg -> weapon-rocket.ogg
+  - blaster.ogg -> weapon-laser.ogg
+  - enemy_attack.ogg -> weapon-tesla.ogg
+  - weapon_change.ogg -> weapon-repair.ogg
+
+  The processing only changes timing, pitch, filtering, echo, mixing, and
+  loudness. Every weapon uses a different final file and sonic profile.
 
 - Kenney Starter Kit City Builder
   https://github.com/KenneyNL/Starter-Kit-City-Builder
@@ -20,5 +28,5 @@ Sources retrieved on 2026-10-09:
 License declaration:
 https://creativecommons.org/publicdomain/zero/1.0/
 
-The files were renamed for their purpose in this game. No attribution is
-required, but this notice is retained to document provenance.
+The files were adapted and renamed for their purpose in this game. No
+attribution is required, but this notice is retained to document provenance.

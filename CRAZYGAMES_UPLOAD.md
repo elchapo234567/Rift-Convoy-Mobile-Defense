@@ -10,6 +10,9 @@ The build contains:
 - four generated top-down convoy vehicles and four installable rotating hardpoints;
 - a continuous procedural road across four crossfading terrain biomes, with vehicles aligned to every curve;
 - six modules with four individually generated and visibly distinct upgrade designs each;
+- six individually processed CC0 weapon sounds, one unique sound profile per module;
+- random ambush events that attack from the left, right, top, and bottom with direction-safe enemy rendering;
+- four complete convoy skin sets in the Garage, including three generated rewarded-ad unlocks;
 - Heli Strafe, Airstrike, and Repair Drone active abilities;
 - six risk/reward route decisions, with a safe option always available;
 - seven normal enemy classes and four boss behavior families;
@@ -17,7 +20,7 @@ The build contains:
 - a five-step skippable visual onboarding flow;
 - landscape desktop and mobile controls with portrait rotation guidance;
 - CrazyGames Data cloud progress plus local fallback;
-- optional rewarded ads for 5 Shards and one post-defeat convoy revive.
+- optional rewarded ads for 5 Shards, one post-defeat convoy revive, and cosmetic convoy skins.
 
 ## Portal steps
 
@@ -34,7 +37,8 @@ The build contains:
 - Complete or skip the five-step tutorial.
 - Install, upgrade, and sell convoy modules while the convoy is moving.
 - Confirm every vehicle follows the road angle and that a destroyed vehicle removes its mounted module at the same time.
-- Confirm enemies remain upright while approaching from the right and never rotate upside down.
+- Confirm enemies remain upright and direction markers point toward the convoy during left, right, top, and bottom ambushes.
+- Open the Convoy Garage, equip Vanguard, and verify all four chassis change together when another skin is selected.
 - Aim Heli Strafe and Airstrike; activate Repair Drone.
 - Clear a sector and choose each route category at least once.
 - Win First Escort and verify the next expedition unlocks and Shards persist after reload.
@@ -44,6 +48,7 @@ The build contains:
 - In Full Launch or a Preview that permits test ads, complete a Get Shards ad and verify exactly +5 Shards.
 - Fail or cancel an ad and verify that no reward is granted.
 - Lose a run, complete the optional revive ad, and verify it can be used only once during that run.
+- Complete a Garage skin ad and verify only the selected cosmetic skin unlocks, equips, saves, and restores after reload.
 - Confirm that audio pauses when an ad starts and resumes after `adFinished` or `adError`.
 
 CrazyGames disables ads during Basic Launch. An `adsDisabledBasicLaunch` error is expected there and must not grant a reward. Real ad delivery cannot be validated from localhost or GitHub Pages.
@@ -63,7 +68,7 @@ CrazyGames disables ads during Basic Launch. An `adsDisabledBasicLaunch` error i
 
 ## Saving
 
-The production namespace is `riftConvoyProductionV1`. The synchronized snapshot stores Shards, completed expeditions, unlocked modules, selected loadout, tutorial state, sound preference, and best score. CrazyGames Data is used when available and local storage is maintained as a fallback. Snapshots are validated before use; the newest valid cloud/device snapshot wins. Rewarded-ad progress is written immediately.
+The production namespace is `riftConvoyProductionV1`. The synchronized snapshot stores Shards, completed expeditions, unlocked modules, selected loadout, unlocked and selected convoy skins, tutorial state, sound preference, and best score. CrazyGames Data is used when available and local storage is maintained as a fallback. Snapshots are validated before use; the newest valid cloud/device snapshot wins. Rewarded-ad progress is written immediately.
 
 ## Lifecycle and quality
 
